@@ -171,7 +171,7 @@ status_t SensorDevice::activate(void* ident, int handle, int enabled)
         if(fd < 0)
             return -ENODEV;
 
-        nwr = snprintf(value, 2, "%d\n", enabled ? 1 : 0);
+        nwr = sprintf(value, "%s\n", enabled ? "1" : "0");
         write(fd, value, nwr);
         close(fd);
         return 0;
