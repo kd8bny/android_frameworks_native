@@ -59,10 +59,8 @@ struct BatteryProperties {
     int batteryTemperature;
     String8 batteryTechnology;
 
-<<<<<<< HEAD
     bool chargerDockAcOnline;
-=======
->>>>>>> b245ffb... native: Add dock battery support
+
     bool dockBatterySupported;
     int dockBatteryStatus;
     int dockBatteryHealth;
